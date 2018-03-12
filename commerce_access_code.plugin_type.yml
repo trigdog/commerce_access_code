@@ -1,0 +1,5 @@
+commerce_access_code.access_code:
+  label: Access Code
+  provider: commerce_access_code
+  plugin_manager_service_id: plugin.manager.access_code
+  plugin_definition_decorator_class: Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator

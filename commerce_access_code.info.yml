@@ -1,0 +1,9 @@
+name: Commerce Access Code
+type: module
+description: 'Integrates a code field into product variations to restrict the purchase of that product with a code.'
+package: 'Commerce (contrib)'
+core: 8.x
+dependencies:
+  - commerce
+  - entity
+  - commerce:commerce_product

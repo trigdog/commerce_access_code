@@ -1,0 +1,9 @@
+services:
+  commerce_access_code.referenceable_plugin_types_subscriber:
+    class: Drupal\commerce_access_code\EventSubscriber\ReferenceablePluginTypesSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }
+  plugin.manager.access_code:
+    class: Drupal\commerce_access_code\AccessCodeManager
+    parent: default_plugin_manager

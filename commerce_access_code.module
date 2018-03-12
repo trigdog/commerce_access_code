@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function commerce_access_code_entity_bundle_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type, $bundle) {
+  // Add constraints to order item type which use access codes
+  if ($entity_type->id() == 'commerce_order_item' && !empty($fields['access_code'])) {
+    // Add a constraint to the access_code field to validate by the selected access code plugin
+    $fields['access_code']->addConstraint('commerce_access_code_validation', []);
+  }
+}
