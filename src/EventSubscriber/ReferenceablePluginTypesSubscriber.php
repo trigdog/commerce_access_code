@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\commerce_acccess_code\EventSubscriber;
+namespace Drupal\commerce_access_code\EventSubscriber;
 
 use Drupal\commerce\Event\ReferenceablePluginTypesEvent;
 use Drupal\commerce\Event\CommerceEvents;
