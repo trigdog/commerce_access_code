@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\commerce_access_code\Plugin\AccessCode;
+namespace Drupal\commerce_access_code\Plugin\Commerce\AccessCode;
 
 use Drupal\Component\Plugin\ConfigurablePluginInterface;
 use Drupal\Core\Plugin\PluginFormInterface;
